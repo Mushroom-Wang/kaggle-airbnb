@@ -73,8 +73,14 @@ To use this project, first clone the repo on your device using the command below
 [(Back to top)](#table-of-contents)
 
 ## Exploratory Analysis
+I draw the scatter plots of the target variable vs. each exploratory variable.
+![Figure 1: Correlation Matrix](https://raw.githubusercontent.com/Mushroom-Wang/kaggle-airbnb/master/images/correlation-matrix.png)
 ## Feature Selection
+First, I use the Random Forest algorithm to choose the features. Second, I compare the accuracy of the training data when changing the number of features (from 2 to 20) to select. According to Figure 1, choosing more features yields a higher training accuracy. Since selecting 14 to 19 features yields similar classification accuracy, further analysis needed to determine which features are more important.
+![Figure 2: Box Plot of RFE Number of Selected Features vs. Classification Accuracy](https://raw.githubusercontent.com/Mushroom-Wang/kaggle-airbnb/master/images/feature-selection.png)
 ## Feature Importance
+The feature importance provides some guidelines for me to drop several features when run the model later.
+![Figure 3: Bar Chart of DecisionTreeRegressor Feature Importance Scores](https://raw.githubusercontent.com/Mushroom-Wang/kaggle-airbnb/master/images/feature-importance.png)
 # Footer
 [(Back to top)](#table-of-contents)
 
